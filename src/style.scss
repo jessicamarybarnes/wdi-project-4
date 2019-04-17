@@ -1,0 +1,187 @@
+@import "../node_modules/bulma/bulma.sass";
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/form.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.select__menu {
+  color: black;
+}
+
+.hero {
+  border-top: 10px solid #ffe6e6;
+  border-bottom: 10px solid #ffe6e6;
+}
+
+.navbar-item .logo {
+  max-height: 40px;
+}
+
+.navbar-item .create {
+  max-height: 40px;
+}
+
+.fas.fa-utensils {
+  max-height: 40px;
+  color: black;
+}
+
+.meal-hero {
+  width: 100%;
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    transition: inherit;
+    z-index: 0;
+  }
+
+  &:hover {
+    &:before {
+      transform: scale(1.2);
+    }
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+  }
+}
+
+a {
+  color: #ffe6e6;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.fas {
+  color: #ffe6e6;
+  text-align: right;
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.5s all ease;
+
+  &:hover {
+    font-size: 30px;
+  }
+}
+
+// i.fas {
+//   transition: 0.5s all ease;
+//   background-size: 100%;
+//
+//   &:before {
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: inherit;
+//     transition: inherit;
+//     z-index: 0;
+//   }
+//
+//   &:hover {
+//     &:before {
+//       transform: scale(1.2);
+//     }
+//   }
+// }
+
+.title-over-image {
+  position: absolute;
+  background-size: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,0.7);
+  padding: 20px 100px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.over-image {
+  position: absolute;
+  z-index: 1;
+  background: rgba(0,0,0,0.7);
+  left: 0;
+  bottom: 20vh;
+  padding: 10px;
+  color: #fff;
+}
+
+.suggestions {
+  margin-top: 35px;
+}
+
+.pink {
+    border: 10px solid #ffe6e6;
+}
+
+button {
+  margin: 10px 10px 10px 0;
+}
+
+.modal {
+  background: rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.star-container {
+  margin-top: -7px;
+  margin-left: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
